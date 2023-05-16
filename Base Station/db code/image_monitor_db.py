@@ -68,9 +68,9 @@ def write_to_file(binary_data, file_name):
   print("[DATA] : The following file has been written to the project directory: ", file_name)
 
 def main():
-  file_path_name = "/home/group10/Q5_5.png"
+  file_path_name = "/home/group10/inductor.jpg"
   file_blob = convert_into_binary(file_path_name)
-  print("[INFO] : the last 100 characters of blob = ", file_blob[:100]) 
+  #print("[INFO] : the last 100 characters of blob = ", file_blob[:100]) 
   last_updated_entry = insert_into_database(file_path_name, file_blob)
   read_blob_data(last_updated_entry)
 
