@@ -1,15 +1,13 @@
 # Test main file to get sensor data
 import sys
-import sqlite3
 import time
 from datetime import datetime
 import  RPi.GPIO as GPIO
 import time
 import Adafruit_DHT
-import os 
 
 
-sys.path.insert(0,'/home/group10/')
+sys.path.insert(0,'/home/pi/')
 import terminal_RTC
 import return_sense
 import sensor_monitor_db
@@ -36,7 +34,7 @@ def main():
     # 11 = x0 hours
     if timeStr[17] == '0':
         temperature, humidity, light = return_sense.getSensorVal(pin_to_circuit,DHT_SENSOR,DHT_PIN)
-        sensor_monitor_db.insertVaribleIntoSensorTable('sensing.db', timeStr[:-14], temperature, humidity, light)
+        sensor_monitor_db.insertVaribleIntoSensorTable('sensing.db', timeStr[:9], timeStr[11:-14], temperature, humidity, light)
     
     
     time.sleep(0.5)
