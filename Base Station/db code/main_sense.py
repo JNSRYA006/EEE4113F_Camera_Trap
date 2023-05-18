@@ -34,7 +34,7 @@ def main():
     # 11 = x0 hours
     if timeStr[17] == '0':
         temperature, humidity, light = return_sense.getSensorVal(pin_to_circuit,DHT_SENSOR,DHT_PIN)
-        sensor_monitor_db.insertVaribleIntoSensorTable('sensing.db', timeStr[:9], timeStr[11:-14], temperature, humidity, light)
+        sensor_monitor_db.insertVaribleIntoSensorTable('sensing.db', timeStr[:10], timeStr[11:-14], temperature, humidity, light)
     
     
     time.sleep(0.5)

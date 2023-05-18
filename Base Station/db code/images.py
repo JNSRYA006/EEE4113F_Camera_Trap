@@ -26,4 +26,5 @@ def getListImageandPath(base_directory):
     
     return file_names, file_paths
 
+
 #print(getListImageandPath("/home/pi/images/"))
