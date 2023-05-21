@@ -1,2 +1,2 @@
 usrname: pi
-paswrd: raspberry
+paswrd: pi
