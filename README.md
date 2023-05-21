@@ -10,7 +10,7 @@ This repo serves the purpose of collating all of the work done by group members 
 
 # Aditional Info
 ## Group Members
-JNSRYA006
-KGKOMO001
-ADNSIG001
-MKHAND025
+### JNSRYA006
+### KGKOMO001
+### ADNSIG001
+### MKHAND025
